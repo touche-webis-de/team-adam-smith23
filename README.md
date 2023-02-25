@@ -40,7 +40,7 @@ Place the downloaded zip-Archive in the
 [checkpoints](checkpoints)
 directory and un-zip the archive (should result in the folder
 [checkpoints/human_value_trained_models](checkpoints/human_value_trained_models)
-with 14 files inside).
+with 24 files inside).
 ```bash
 TAG=1.0.0-cpu # or 'TAG=1.0.0-cuda11.3' if a GPU is available
 CUDA=nocuda # or 'CUDA=cuda11.3' if a GPU is available
