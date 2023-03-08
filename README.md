@@ -1,7 +1,9 @@
 # team-adam-smith23
 [![license](https://img.shields.io/github/license/touche-webis-de/team-adam-smith23)](https://github.com/touche-webis-de/team-adam-smith23/blob/main/LICENSE)
 
-Dockerized version of the winning submission to ValueEval'23. Needs a [Docker installation](https://docs.docker.com/engine/installation/).
+Dockerized version of the winning submission to ValueEval'23 by Schroter et al. [[original code](https://github.com/danielschroter/human_value_detector)]
+
+Needs a [Docker installation](https://docs.docker.com/engine/installation/).
 
 ## Usage
 
