@@ -50,14 +50,14 @@ The result is a JSON object with the classifications:
 }
 ```
 
-Suggested model configurations (in `human_value_trained_models`):
-- `EN-219-Thres-LoD` (all 12 models)
+Suggested ensembles (names as used in Schroter et al, 2023 [publication under review]. The file pairs of the corresponding models, and only these, need to be placed in `human_value_trained_models`):
+- `EN-Thres-LoD` (all 12 models)
   - using `HCV-364`, `HCV-366`, `HCV-368`, `HCV-371`, `HCV-372`, `HCV-373`, `HCV-402`, `HCV-403`, `HCV-405`, `HCV-406`, `HCV-408`, `HCV-409`
   - `--threshold=0.26`
-- `EN-243-Max-F1` (6 models)
+- `EN-Max-F1` (6 models)
   - using `HCV-402`, `HCV-403`, `HCV-405`, `HCV-406`, `HCV-408`, `HCV-409`
   - `--threshold=0.26`
-- `EN-236-Deberta-F1` (3 models)
+- `EN-Deberta-F1` (3 models)
   - using `HCV-406`, `HCV-408`, `HCV-409`
   - `--threshold=0.27`
 - `Single-Deberta-F1` (1 model)
