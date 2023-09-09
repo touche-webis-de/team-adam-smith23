@@ -10,14 +10,14 @@ Needs a [Docker installation](https://docs.docker.com/engine/installation/).
 The classifier requires two mounted folders, `input` (containing an `arguments.tsv` from the [dataset](https://doi.org/10.5281/zenodo.6814563)) and `output`.
 ```bash
 mkdir input output
-wget https://zenodo.org/record/7550385/files/arguments-test.tsv > -O input/arguments.tsv
+curl https://zenodo.org/record/7550385/files/arguments-test.tsv > input/arguments.tsv
 ```
 
 Create a [submission file](https://touche.webis.de/semeval23/touche23-web/index.html#submission) in `output`:
 ```bash
 docker run --rm -it \
-  --volume "$PWD/input:$input" \
-  --volume "$PWD/output:$output" \
+  --volume "$PWD/input:/input" \
+  --volume "$PWD/output:/output" \
   ghcr.io/webis-de/valueeval23-adam-smith-12:1.0.0-cpu \
   python3 /app/predict.py --inputDataset /input --outputDir /output
 ```
@@ -29,6 +29,8 @@ This repository is based on the `predict.ipynb` as well as the `data_modules`, `
 
 
 ## Build Docker Image
+
+Remove line `checkpoints/human_value_trained_models` in `.dockerignore` file.
 
 Unzip the [model files](https://zenodo.org/record/7656534) into [checkpoints](checkpoints) (creating `checkpoints/human_value_trained_models` with 24 files inside).
 ```bash
