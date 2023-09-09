@@ -30,8 +30,6 @@ This repository is based on the `predict.ipynb` as well as the `data_modules`, `
 
 ## Build Docker Image
 
-Remove line `checkpoints/human_value_trained_models` in `.dockerignore` file.
-
 Unzip the [model files](https://zenodo.org/record/7656534) into [checkpoints](checkpoints) (creating `checkpoints/human_value_trained_models` with 24 files inside).
 ```bash
 docker build -t ghcr.io/webis-de/valueeval23-adam-smith-12:1.0.0-cpu -f Dockerfile .
