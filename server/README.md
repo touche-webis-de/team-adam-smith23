@@ -50,7 +50,7 @@ The result is a JSON object with the classifications:
 }
 ```
 
-Suggested ensembles (names as used in Schroter et al, 2023 [publication under review]. The file pairs of the corresponding models, and only these, need to be placed in `human_value_trained_models`):
+Suggested ensembles (names as used in [Schroter et al, 2023](https://touche.webis.de/publications.html#schroter_2023). The file pairs of the corresponding models, and only these, need to be placed in `human_value_trained_models`):
 - `EN-Thres-LoD` (all 12 models)
   - using `HCV-364`, `HCV-366`, `HCV-368`, `HCV-371`, `HCV-372`, `HCV-373`, `HCV-402`, `HCV-403`, `HCV-405`, `HCV-406`, `HCV-408`, `HCV-409`
   - `--threshold=0.26`
